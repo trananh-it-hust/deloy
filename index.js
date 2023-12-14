@@ -19,7 +19,7 @@ app.post("/register", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("Thành công");
 });
-app.listen(8002, () => {
+app.listen(8003, () => {
   console.log("Sever is running !");
   connectMongoDb();
 });
