@@ -16,8 +16,10 @@ app.post("/register", async (req, res) => {
     res.send({ msg: "Thành công", data: createuser });
   }
 });
-
-app.listen(8001, () => {
+app.get("/", (req, res) => {
+  res.send("Thành công");
+});
+app.listen(8002, () => {
   console.log("Sever is running !");
   connectMongoDb();
 });
